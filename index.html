@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jualan Injector App Terbaik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem 4rem;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 0.25rem;
+      text-align: center;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    p.subtitle {
+      font-weight: 500;
+      font-size: 1rem;
+      color: #d7cfe6cc;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      max-width: 400px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1100px;
+    }
+    .product-card {
+      background: rgba(255 255 255 / 0.1);
+      border-radius: 16px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(8px);
+      cursor: default;
+    }
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(118,75,162,0.6);
+    }
+    .product-image {
+      width: 140px;
+      height: 140px;
+      background: #8e52ff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      color: white;
+      margin-bottom: 1rem;
+      box-shadow: 0 6px 15px rgba(118,75,162,0.5);
+      user-select: none;
+    }
+    .product-name {
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .product-desc {
+      font-size: 0.9rem;
+      color: #d7cfe6cc;
+      text-align: center;
+      margin-bottom: 1rem;
+      min-height: 48px;
+    }
+    .product-price {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #fdd835; /* bright gold */
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+    .btn-buy {
+      background: #fdd835;
+      color: #3a2e00;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.75rem 1.75rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(253,216,53,0.5);
+      transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      user-select: none;
+      text-align: center;
+      width: 100%;
+      max-width: 160px;
+    }
+    .btn-buy:hover {
+      background: #fbc02d;
+      color: #271b00;
+      transform: scale(1.05);
+      box-shadow: 0 12px 22px rgba(251,192,45,0.7);
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #d7cfe6cc;
+      text-align: center;
+      max-width: 400px;
+    }
+    /* Small icon style for product image placeholders */
+    .icon {
+      font-size: 5rem;
+      filter: drop-shadow(0 0 3px rgba(0,0,0,0.2));
+    }
+  </style>
+</head>
+<body>
+  <h1>Datalock Injector App</h1>
+  <p class="subtitle">5 Produk Datalock Injector App terbaik siap membantu kebutuhanmu! Klik "Beli" untuk order via WhatsApp.</p>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="product-image" aria-label="Icon Datalock Basic">
+        🌱
+      </div>
+      <div class="product-name">Datalock Basic</div>
+      <div class="product-desc">Full Fitur Dengan Kemampuan Optimize Dan Rog Monitoring.</div>
+      <div class="product-price">Rp 20.000</div>
+      <button class="btn-buy" onclick="buyWhatsapp('Datalock Basic, Rp 20.000')">Beli</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" aria-label="Icon Datalock Lite">
+        🛡
+      </div>
+      <div class="product-name">Datalock Lite</div>
+      <div class="product-desc">Full Fitur Dengan Kemampuan Optimize Dan Rog Monitoring.</div>
+      <div class="product-price">Rp 40.000</div>
+      <button class="btn-buy" onclick="buyWhatsapp('Datalock Lite, Rp 40.000')">Beli</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" aria-label="Icon Datalock Max">
+        ⚡
+      </div>
+      <div class="product-name">Datalock Max</div>
+      <div class="product-desc">Full Fitur Dengan Kemampuan Optimize Dan Rog Monitoring.</div>
+      <div class="product-price">Rp 60.000</div>
+      <button class="btn-buy" onclick="buyWhatsapp('Datalock Max, Rp 60.000')">Beli</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" aria-label="Icon Datalock Ultra">
+        🔥
+      </div>
+      <div class="product-name">Datalock Ultra</div>
+      <div class="product-desc">Full Fitur Dengan Kemampuan Optimize Dan Rog Monitoring.</div>
+      <div class="product-price">Rp 90.000</div>
+      <button class="btn-buy" onclick="buyWhatsapp('Datalock Ultra,, Rp 90..000')">Beli</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" aria-label="Icon Datalock Exclusive">
+        ✨
+      </div>
+      <div class="product-name">Datalock Exclusive</div>
+      <div class="product-desc">Full Fitur Dengan Semua Injector Dilengkapi Fitur Resolution Dan Rog Monitoring Serta Hartz,cpu,game,touch optimize.</div>
+      <div class="product-price">Rp 150.000</div>
+      <button class="btn-buy" onclick="buyWhatsapp('Datalock Exclusive, Rp 150.000')">Beli</button>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Datalock Injector Apps Official. Hubungi kami via WhatsApp untuk info lebih lanjut.
+  </footer>
+
+  <script>
+    // Your WhatsApp number here, use international format without +, e.g. 6281234567890
+    const whatsappNumber = "6285704827599";
+
+    function buyWhatsapp(productInfo) {
+      const text = encodeURIComponent(`Halo, saya ingin membeli produk berikut: ${productInfo}. Mohon info lebih lanjut.`);
+      const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
+
